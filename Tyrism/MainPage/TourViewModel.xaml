@@ -1,0 +1,41 @@
+﻿<Window x:Class="Tyrism.MainPage.TourViewModel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tyrism.MainPage"
+        mc:Ignorable="d"
+        Title="TourViewModel" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox ItemsSource="{Binding Tour}" Grid.ColumnSpan="2">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Gray" BorderThickness="1" Margin="10" Padding="10">
+                        <StackPanel>
+                            <TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="16" Margin="0,10,0,0"/>
+                            <TextBlock Text="{Binding Description}" TextWrapping="Wrap" Margin="0,5"/>
+                            <TextBlock Text="От:" FontWeight="Bold" Margin="0,10,0,0"/>
+                            <TextBlock Text="{Binding Price, StringFormat='Цена: {0:C}'}" FontWeight="Bold" Foreground="Green"/>
+                            <TextBlock Text="Отзывы:" FontWeight="Bold" Margin="0,10,0,0"/>
+                            <ItemsControl ItemsSource="{Binding Reviews}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding CustomerName}" FontStyle="Italic"/>
+                                            <TextBlock Text="{Binding Comment}"/>
+                                            <TextBlock Text="{Binding Rating}" Foreground="Gold"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

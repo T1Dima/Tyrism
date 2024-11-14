@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyrism", "Tyrism\Tyrism.csproj", "{3D79BAEE-0D49-4ECC-ADFD-E8B8BBF3534B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D79BAEE-0D49-4ECC-ADFD-E8B8BBF3534B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D79BAEE-0D49-4ECC-ADFD-E8B8BBF3534B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D79BAEE-0D49-4ECC-ADFD-E8B8BBF3534B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D79BAEE-0D49-4ECC-ADFD-E8B8BBF3534B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {588E9863-6FAB-470C-93D6-E0BF9E404E03}
+	EndGlobalSection
+EndGlobal
